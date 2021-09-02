@@ -1,0 +1,42 @@
+// mongodb.agreggations
+use('class');
+
+// db.warehouses.insertMany([
+//   {"_id": 1, "stock_item": "amendoas", warehouse: "A", "instock": 120},
+//   {"_id": 2, "stock_item": "nozes", warehouse: "A", "instock": 80},
+//   {"_id": 3, "stock_item": "amendoas", warehouse: "B", "instock": 60},
+//   {"_id": 4, "stock_item": "biscoito", warehouse: "B", "instock": 40},
+//   {"_id": 5, "stock_item": "biscoito", warehouse: "A", "instock": 80},
+// ]);
+
+// db.orders.insertMany([
+//   {"_id": 1, "item": "amendoas", "price": 12, "ordered": 2},
+//   {"_id": 2, "item": "nozes", "price": 20, "ordered": 1},
+//   {"_id": 3, "item": "biscoito", "price": 10, "ordered": 60},
+// ])
+
+db.orders.aggregate([
+  { 
+    $lookup: 
+    {
+      from: "warehouses", // onde a junção é feita;
+      let: { order_item: "$item", order_qty: "$ordered" }, // variavel que guarda o item de orders
+      pipeline: 
+      [
+        {
+          $match:
+          {
+            $expr: // quando comparar duas propriedades
+            {
+              $and: [
+                { $eq: ["$stock_item", "$$order_item"] },
+                { $gte: ["$instock", "$$order_qty"] },
+              ]
+            }
+          }
+        }
+      ], // conjunto de comandos, só tem acesso ao from;
+      as: "stock_data"
+    }
+  }
+])
