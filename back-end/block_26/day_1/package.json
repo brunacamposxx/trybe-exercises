@@ -1,0 +1,19 @@
+{
+  "name": "my-scripts",
+  "version": "0.1.0",
+  "description": "exercise, node, intro",
+  "main": "velocidade.js",
+  "scripts": {
+    "velocidade": "node velocidade.js"
+  },
+  "keywords": [
+    "exercise",
+    "node",
+    "intro"
+  ],
+  "author": "Bruna Campos 92brunacampos@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}

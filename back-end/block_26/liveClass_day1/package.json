@@ -1,0 +1,23 @@
+{
+  "name": "block_26",
+  "version": "0.0.1",
+  "description": "Introdução em NodeJS",
+  "main": "aula_aoVivo.js",
+  "scripts": {
+    "start": "node aula_aoVivo.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brunacamposxx/trybe-exercises/tree/main/back-end/block_26"
+  },
+  "keywords": [
+    "Node",
+    "introdução",
+    "primeiro-exercício"
+  ],
+  "author": "Bruna Campos 92brunacampos@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
