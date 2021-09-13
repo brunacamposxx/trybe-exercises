@@ -4,7 +4,7 @@
   "description": "exercise, node, intro",
   "main": "velocidade.js",
   "scripts": {
-    "velocidade": "node velocidade.js"
+    "sorteio": "node sorteio.js"
   },
   "keywords": [
     "exercise",
