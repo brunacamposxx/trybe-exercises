@@ -1,0 +1,12 @@
+{
+  "name": "simpsons",
+  "version": "1.0.0",
+  "description": "",
+  "main": "simpsons4.js",
+  "scripts": {
+    "simpsons4": "node simpsons4.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
