@@ -121,20 +121,20 @@ Trybe is a school of the future, for people who are fully committed and want to 
  22.2: Normalization, Normal Forms and Dumps<br>
  22.2: Transforming ideas into a database model - Part 2<br>
  22.3: Project - One For All<br>
-<br><strong>Unit 23: Introdution to MongoDB :lock:	<br></strong>
+<br><strong>Unit 23: Introdution to MongoDB :heavy_check_mark:	<br></strong>
  23.1: MongoDB - Introduction<br>
  23.2: Filter Operators<br>
  23.3: Project - Data Flights<br><br>
-<strong>Unit 24: MongoDB: Simple and Complex Updates :lock:<br>	</strong>
+<strong>Unit 24: MongoDB: Simple and Complex Updates :heavy_check_mark:<br>	</strong>
  24.1: Simple Updates<br>
  24.2: Complex Updates - Arrays - Part 1<br>
  24.3: Complex Updates - Arrays - Part 2<br>
  24.4: Project - Commerce<br><br>
-<strong>Unit 25: Aggregation Framework :lock:	<br></strong>
+<strong>Unit 25: Aggregation Framework :heavy_check_mark:	<br></strong>
  25.1: Aggregation Framework - Part 1<br>
  25.2: Aggregation Framework - Part 2<br>
  25.3: Project - Aggregations<br><br>
-<strong>Unit 26: Introduction to Web Development with NodeJS :lock:	<br></strong>
+<strong>Unit 26: Introduction to Web Development with NodeJS :heavy_check_mark:	<br></strong>
  26.1: NodeJS - Introdution<br>
  26.2: NodeJS - Asynchronous Flux<br>
  26.3: NodeJS - Architecture<br>
