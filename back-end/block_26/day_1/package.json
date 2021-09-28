@@ -4,7 +4,10 @@
   "description": "exercise, node, intro",
   "main": "velocidade.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "imc": "node imc.js",
+    "velocidade": "node velocidade.js",
+    "sorteio": "node sorteio.js"
   },
   "keywords": [
     "exercise",
