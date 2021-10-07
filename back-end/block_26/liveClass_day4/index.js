@@ -8,7 +8,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 
-const app = express();
+const app = express(); // atribui uma instancia do express dentro do app;
 app.use(bodyParser.json());
 
 const books = [
@@ -19,6 +19,30 @@ const books = [
 	{ id: 5, title: '1984', author: 'George Orwell' },
 	{ id: 6, title: 'Brave New World', author: 'Aldous Huxley' }
 ];
+
+app.get('/books', (req, res) => {
+	res.status(200).json(books) //em blocos futuros aprenderemos a acessar o MySQL e executar uma query que pegaria os dados requisitados
+});
+
+app.get('/books/:id', (req, res) => {
+	const { id } = req.params // desestruturando id dentro de req // é possivel dar console.log(req.params). no postman procurar o caminho com o id, e no terminal irá aparecer a requsiçãp
+	
+	const booksFind = books.find((b) => b.id === Number(id));
+
+	if (!booksFind) return res.status(404).json({ message: "Não encontrei seu produto :| "})
+
+	res.status(200).json(booksFind)
+});
+
+app.get('/books', ((req, res) => {
+	const { id } = req.query // desestruturando id dentro de req // é possivel dar console.log(req.params). no postman procurar o caminho com o id, e no terminal irá aparecer a requsiçãp
+	
+	const booksFind = books.find((b) => b.id === Number(id));
+
+	if (!booksFind) return res.status(404).json({ message: "Não encontrei seu produto :| "})
+
+	res.status(200).json(booksFind)
+}))
 
 app.post('/books', (req, res) => {
 	const token = req.headers.authorization; // pega o valor que enviei pelo postman;
