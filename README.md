@@ -2,7 +2,7 @@
 
 #### Developed by [Bruna Campos](https://www.linkedin.com/in/brunacamposxx/) <br>
 
-## Class 10-B
+## Class 11
 
 Trybe is a school of the future, for people who are fully committed and want to build a successful career in technology. The study program has more than 1.500 class hours and includes an Introduction to Software Development, Front-end, Back-end, Algorithm, Computer Science, Software Engineering, Agile Methodologies, and Soft Skills as well. Trybe's curriculum was designed in partnership with the best people in technology worldwide, such as companies rated as good places to work. Throughout the training, we study JavaScript, HTML, CSS, React, Node, Express.js, SQL, Git, among other languages and frameworks.
 
